@@ -8,11 +8,20 @@ const getData=(dataId)=>{
 }
 
 
-async function fetchingData() {
+// async function fetchingData() {
+//     await getData(1);
+//     await getData(2);
+//     await getData(3);
+//     await getData(4);
+// }
+
+// fetchingData();
+
+
+// This is Immidate Invoked Funcation Expression (iife)
+(async function() {
     await getData(1);
     await getData(2);
     await getData(3);
     await getData(4);
-}
-
-fetchingData();
+})();
