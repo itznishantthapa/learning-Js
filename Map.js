@@ -61,3 +61,9 @@ const details=users.find((user)=>{
 // );
 // console.log(totolAge);
 
+const arr=[1,2,3,4,5,6,6,4,123,34,1324,231423,4];
+const newArray=arr.map((element)=>{
+    return element*1000;
+});
+
+console.log(newArray);
